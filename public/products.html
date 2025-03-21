@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="" class="text-2xl font-bold text-blue-600 italic">alla moda</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 tran">home</a>
+                    <a href="products.html" class="text-gray-600 hover:text-blue-600">Shop</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-blue-600">Cart</a>
+                    <a href="profile.html" class="text-gray-600 hover:text-blue-600">Profile</a>
+                </div>
+    
+                <!-- Auth Buttons -->
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-sign-in-alt mr-2"></i>Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Add before main content -->
+    <section class="bg-gray-100 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <select class="border rounded-lg px-4 py-2">
+                        <option>Sort by: Popularity</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                    <span class="text-gray-600">Showing 1-12 of 120 products</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button class="p-2 rounded-lg bg-white border"><i class="fas fa-th-large"></i></button>
+                    <button class="p-2 rounded-lg bg-white border"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" w-auto h-auto">
+        <div class="grid grid-row-1 md:grid-cols-3 gap-6">
+        <div class=" grid pl-16 pt-10 pr-16 pb-10">
+            <div class="gap-6">
+                <div class=" group rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="./images/mendisplay3.jpg" alt="Guyer Chair" class="w-full h-60 object-cover opacity-80">
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h2 class="text-lg font-semibold">women coat</h2>
+                        <p class="text-red-500 text-xl font-bold">$45.00 <span class="text-gray-400 line-through">$55.90</span></p>
+                        <p class="text-gray-500">(150)</p>
+                    </div>
+                    <a href="product-detail.html" class="mt-1 mb-1 font-bold inline-block w-full bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600">
+                        Lihat Detail
+                    </a>
+                    <button class="w-full bg-blue-600 text-white py-2 font-semibold" href="cart.html" ><a href="cart.html">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class=" grid pl-16 pt-10 pr-16 pb-10">
+            <div class=" gap-6">
+                <div class=" group rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="./images/mendisplay1.jpg" alt="Guyer Chair" class="w-full h-60 object-cover opacity-80">
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h2 class="text-lg font-semibold">men jacket</h2>
+                        <p class="text-red-500 text-xl font-bold">$45.00 <span class="text-gray-400 line-through">$55.90</span></p>
+                        <p class="text-gray-500">(150)</p>
+                    </div>
+                    <a href="product-detail.html" class="mt-1 mb-1 font-bold inline-block w-full bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600">
+                        Lihat Detail
+                    </a>
+                    <button class="w-full bg-blue-600 text-white py-2 font-semibold" href="cart.html" ><a href="cart.html">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class=" grid pl-16 pt-10 pr-16 pb-10">
+            <div class=" gap-6">
+                <div class=" group rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="./images/mendisplay2.png" alt="Guyer Chair" class="w-full h-60 object-cover opacity-80">
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h2 class="text-lg font-semibold">men jacket stadium</h2>
+                        <p class="text-red-500 text-xl font-bold">$45.00 <span class="text-gray-400 line-through">$55.90</span></p>
+                        <p class="text-gray-500">(150)</p>
+                    </div>
+                    <a href="product-detail.html" class="mt-1 mb-1 font-bold inline-block w-full bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600">
+                        Lihat Detail
+                    </a>
+                    <button class="w-full bg-blue-600 text-white py-2 font-semibold" href="cart.html" ><a href="cart.html">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class=" grid pl-16 pt-10 pr-16 pb-10">
+            <div class=" gap-6">
+                <div class=" group rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="./images/mendisplay2.png" alt="Guyer Chair" class="w-full h-60 object-cover opacity-80">
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h2 class="text-lg font-semibold">men jacket stadium</h2>
+                        <p class="text-red-500 text-xl font-bold">$45.00 <span class="text-gray-400 line-through">$55.90</span></p>
+                        <p class="text-gray-500">(150)</p>
+                    </div>
+                    <a href="product-detail.html" class="mt-1 mb-1 font-bold inline-block w-full bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600">
+                        Lihat Detail
+                    </a>
+                    <button class="w-full bg-blue-600 text-white py-2 font-semibold" href="cart.html" ><a href="cart.html">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class=" grid pl-16 pt-10 pr-16 pb-10">
+            <div class=" gap-6">
+                <div class=" group rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="./images/display1.jpeg" alt="Guyer Chair" class="w-full h-60 object-cover opacity-80">
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h2 class="text-lg font-semibold">women winter coat</h2>
+                        <p class="text-red-500 text-xl font-bold">$45.00 <span class="text-gray-400 line-through">$55.90</span></p>
+                        <p class="text-gray-500">(150)</p>
+                    </div>
+                    <a href="product-detail.html" class="mt-1 mb-1 font-bold inline-block w-full bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600">
+                        Lihat Detail
+                    </a>
+                    <button class="w-full bg-blue-600 text-white py-2 font-semibold" href="cart.html" ><a href="cart.html">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class=" grid pl-16 pt-10 pr-16 pb-10">
+            <div class=" gap-6">
+                <div class=" group rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="./images/dispaly2.png" alt="Guyer Chair" class="w-full h-60 object-cover opacity-80">
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h2 class="text-lg font-semibold">men jacket stadium</h2>
+                        <p class="text-red-500 text-xl font-bold">$45.00 <span class="text-gray-400 line-through">$55.90</span></p>
+                        <p class="text-gray-500">(150)</p>
+                    </div>
+                    <a href="product-detail.html" class="mt-1 mb-1 font-bold inline-block w-full bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-600">
+                        Lihat Detail
+                    </a>
+                    <button class="w-full bg-blue-600 text-white py-2 font-semibold" href="cart.html" ><a href="cart.html">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
+

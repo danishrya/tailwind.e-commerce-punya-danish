@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register with Tailwind CSS</title>
+    <!-- Tambahkan Tailwind CSS dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-gray-50">
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between items-center h-16">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 italic">alla moda</a>
+                    
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                        <a href="products.html" class="text-gray-600 hover:text-blue-600">Shop</a>
+                        <a href="cart.html" class="text-gray-600 hover:text-blue-600">Cart</a>
+                        <a href="profile.html" class="text-gray-600 hover:text-blue-600">Profile</a>
+                    </div>
+    
+                    <!-- Auth Buttons -->
+                    <div class="flex items-center space-x-4">
+                        <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                            <i class="fas fa-sign-in-alt mr-2"></i>Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="bg-gray-100 flex items-center justify-center h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <!-- Tab untuk Login dan Register -->
+            <div class="flex justify-center">
+                <button id="loginTab" class="px-4 py-2 font-semibold text-blue-500 border-b-2 border-blue-500 focus:outline-none">
+                    Login
+                </button>
+                <button id="registerTab" class="px-4 py-2 font-semibold text-gray-500 border-b-2 border-transparent hover:text-blue-500 focus:outline-none">
+                    Register
+                </button>
+            </div>
+    
+            <!-- Form Login -->
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label for="loginUsername" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input
+                        type="text"
+                        id="loginUsername"
+                        name="loginUsername"
+                        required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Masukkan username"
+                    />
+                </div>
+                <div>
+                    <label for="loginPassword" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="loginPassword"
+                        required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Masukkan password"
+                    />
+                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    href="./index.html"
+                    >
+                    Login
+                </button>
+            </form>
+    
+            <!-- Form Register -->
+            <form id="registerForm" class="space-y-4 hidden">
+                <div>
+                    <label for="registerUsername" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input
+                        type="text"
+                        id="registerUsername"
+                        name="registerUsername"
+                        required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Masukkan username"
+                    />
+                </div>
+                <div>
+                    <label for="registerEmail" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        name="registerEmail"
+                        required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Masukkan email"
+                    />
+                </div>
+                <div>
+                    <label for="registerPassword" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        name="registerPassword"
+                        required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Masukkan password"
+                    />
+                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
+                    Register
+                </button>
+            </form>
+    
+            <!-- Pesan Hasil -->
+            <p id="message" class="mt-4 text-center text-sm"></p>
+        </div>
+    
+        <!-- Script JavaScript -->
+        <script src="/public/script.js"></script>
+    </section>
+   
+</body>
+</html>

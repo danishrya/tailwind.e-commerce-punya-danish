@@ -1,0 +1,46 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Checkout Steps -->
+        <div class="lg:col-span-2">
+            <div class="flex justify-center mb-8">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center">1</div>
+                    <div class="w-32 h-1 bg-blue-600"></div>
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center">2</div>
+                    <div class="w-32 h-1 bg-gray-300"></div>
+                    <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shipping Form -->
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-6">Shipping Information</h2>
+            <form class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="First Name" class="w-full p-3 border rounded-lg">
+                    <input type="text" placeholder="Last Name" class="w-full p-3 border rounded-lg">
+                </div>
+                <!-- More form fields -->
+            </form>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-6">Payment Method</h2>
+            <div class="space-y-4">
+                <div class="flex items-center p-4 border rounded-lg cursor-pointer hover:border-blue-600">
+                    <input type="radio" name="payment" class="mr-4">
+                    <i class="fab fa-cc-visa text-3xl text-blue-600 mr-4"></i>
+                    <span>Credit/Debit Card</span>
+                </div>
+                <div class="flex items-center p-4 border rounded-lg cursor-pointer hover:border-blue-600">
+                    <input type="radio" name="payment" class="mr-4">
+                    <i class="fab fa-paypal text-3xl text-blue-600 mr-4"></i>
+                    <span>PayPal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <!-- Sidebar -->
+        <div class="lg:col-span-1 bg-white rounded-xl shadow-md p-6">
+            <div class="text-center mb-6">
+                <div class="w-24 h-24 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                <h3 class="font-bold">John Doe</h3>
+                <p class="text-gray-600">john@example.com</p>
+            </div>
+            <nav class="space-y-2">
+                <a href="profile.html" class="block p-3 hover:bg-gray-100 rounded-lg">Profile</a>
+                <a href="orders.html" class="block p-3 hover:bg-gray-100 rounded-lg">My Orders</a>
+                <a href="wishlist.html" class="block p-3 hover:bg-gray-100 rounded-lg">Wishlist</a>
+                <a href="settings.html" class="block p-3 hover:bg-gray-100 rounded-lg">Settings</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="lg:col-span-3">
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-6">Recent Orders</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-left border-b">
+                                <th class="pb-3">Order ID</th>
+                                <th class="pb-3">Date</th>
+                                <th class="pb-3">Total</th>
+                                <th class="pb-3">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-4">#12345</td>
+                                <td>2023-08-15</td>
+                                <td>$599.00</td>
+                                <td>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                                        Delivered
+                                    </span>
+                                </td>
+                            </tr>
+                            <!-- More rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

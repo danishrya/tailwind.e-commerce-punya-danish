@@ -1,0 +1,73 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <a href="index.html" class="text-2xl font-bold text-blue-600 italic">alla moda</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="products.html" class="text-gray-600 hover:text-blue-600">Shop</a>
+                <a href="cart.html" class="text-gray-600 hover:text-blue-600">Cart</a>
+                <a href="profile.html" class="text-gray-600 hover:text-blue-600">Profile</a>
+            </div>
+
+            <!-- Auth Buttons -->
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                    <i class="fas fa-sign-in-alt mr-2"></i>Login
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Shopping Cart (3 Items)</h1>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Cart Items -->
+        <div class="lg:col-span-2 space-y-6">
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <img src="./images/display1.jpeg" class="w-32 h-32 object-cover rounded-lg">
+                <div class="ml-6 flex-1">
+                    <h3 class="text-xl font-semibold">women winter coat</h3>
+                    <p class="text-gray-600">Color: Black</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center">
+                            <button class="px-3 py-1 border rounded-l">-</button>
+                            <input type="number" value="1" class="w-16 text-center border-y">
+                            <button class="px-3 py-1 border rounded-r">+</button>
+                        </div>
+                        <div class="text-xl font-bold">$599.00</div>
+                    </div>
+                </div>
+                <button class="text-red-500 hover:text-red-700 ml-4">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+            <!-- Repeat cart items -->
+        </div>
+
+        <!-- Order Summary -->
+        <div class="bg-white rounded-xl shadow-md p-6 h-fit sticky top-8">
+            <h2 class="text-2xl font-bold mb-4">Order Summary</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between">
+                    <span>Subtotal (3 items)</span>
+                    <span>$1,797.00</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Shipping</span>
+                    <span class="text-green-500">Free</span>
+                </div>
+                <div class="flex justify-between font-bold text-xl">
+                    <span>Total</span>
+                    <span>$1,797.00</span>
+                </div>
+            </div>
+            <a href="checkout.html" class="mt-6 block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700">
+                Proceed to Checkout
+            </a>
+        </div>
+    </div>
+</div>
